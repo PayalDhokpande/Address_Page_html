@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>address</title>
+</head>
+<body>
+  <div id="address">
+   
+    <script>
+      const addressList = document.getElementById('address')
+      new URLSearchParams(window.location.search).forEach((value, name) =>{
+        addressList.append(`${name}: ${value}`)
+        addressList.append(document.createElement('br'))
+
+      })
+      </script>
+       <a href="/index.html"> Back to Form</a>
+  </div>
+</body>
+</html>
